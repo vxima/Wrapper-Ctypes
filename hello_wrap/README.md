@@ -1,16 +1,16 @@
-# Exemplo basico de como chamar uma funçao de C para o python
+# Basic example of calling a C function in python
 
-* ## Como compilar :
+* ## How to compile :
 
-Isso cria um arquvio .so para os sistemas Linux para que possa ser chamado pela funçao CDLL no arquivo do python.
+This makes a .so file for the Linux systems whick can be called from the CDLL funciton in the python file.
 
 ```
 gcc -shared -Wl,-soname,print -o print.so -fPIC print.c
 ```
 
-* ## Como rodar:
+* ## How to run:
 
-Executa o codigo em python que chama a função em C.
+Executes the python code which calls the C function
 
 ```
 python wrap.py
